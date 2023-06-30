@@ -57,7 +57,7 @@ public class CameraActivity extends AppCompatActivity {
         } else if (availability.isSupported()) {
             // Criar sessão AR
             try {
-                Session Session = new Session(this);
+                arSession = new Session(this);
             } catch (UnavailableArcoreNotInstalledException e) {
                 throw new RuntimeException(e);
             } catch (UnavailableApkTooOldException e) {
@@ -87,7 +87,6 @@ public class CameraActivity extends AppCompatActivity {
 
                     arSession.setCameraTextureName(textureId);
                 }
-
 
                 @Override
                 public void onSurfaceTextureSizeChanged(SurfaceTexture surfaceTexture, int width, int height) {

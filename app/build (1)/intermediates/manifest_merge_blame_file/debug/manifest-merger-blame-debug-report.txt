@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.apprealidadeaumentada"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:6:5-8:36
+12        android:name="android.hardware.camera"
+12-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:7:9-47
+13        android:required="false" />
+13-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:8:9-33
+14
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:9:5-65
+15-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:9:22-62
+16
+17    <queries>
+17-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:20:5-22:15
+18        <package android:name="com.google.ar.core" />
+18-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:21:9-54
+18-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:21:18-51
+19    </queries>
+20
+21    <permission
+21-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+22        android:name="com.example.apprealidadeaumentada.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+22-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+23        android:protectionLevel="signature" />
+23-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+24
+25    <uses-permission android:name="com.example.apprealidadeaumentada.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+25-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+25-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+26
+27    <application
+27-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:11:5-32:19
+28        android:allowBackup="true"
+28-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:12:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] C:\Users\cbona\.gradle\caches\transforms-3\b2825187cdf9d2cde1c2d9ce1aeada84\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:13:9-65
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:fullBackupContent="@xml/backup_rules"
+33-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:14:9-54
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:15:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:16:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:17:9-54
+37        android:supportsRtl="true"
+37-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:18:9-35
+38        android:theme="@style/Theme.AppRealidadeAumentada" >
+38-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:19:9-59
+39        <activity
+39-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:22:9-30:20
+40            android:name="com.example.apprealidadeaumentada.MainActivity"
+40-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:23:13-41
+41            android:exported="true" >
+41-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:24:13-36
+42            <intent-filter>
+42-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:25:13-29:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:26:17-69
+43-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:26:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:28:17-77
+45-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:28:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.example.apprealidadeaumentada.CameraActivity" />
+48-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:31:9-52
+48-->C:\Users\cbona\OneDrive\Ambiente de Trabalho\Projetos\AppRealidadeAumentada\app\src\main\AndroidManifest.xml:31:19-49
+49        <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+50        <meta-data
+50-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:27:9-29:41
+51            android:name="com.google.ar.core.min_apk_version"
+51-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:28:13-62
+52            android:value="230900000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+52-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:29:13-38
+53        <activity
+53-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:31:9-37:80
+54            android:name="com.google.ar.core.InstallActivity"
+54-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:32:13-62
+55            android:configChanges="keyboardHidden|orientation|screenSize"
+55-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:33:13-74
+56            android:excludeFromRecents="true"
+56-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:34:13-46
+57            android:exported="false"
+57-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:35:13-37
+58            android:launchMode="singleTop"
+58-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:36:13-43
+59            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+59-->[com.google.ar:core:1.37.0] C:\Users\cbona\.gradle\caches\transforms-3\49b767f428be6f79ce3c51a3efbfe5d2\transformed\core-1.37.0\AndroidManifest.xml:37:13-77
+60
+61        <provider
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+62            android:name="androidx.startup.InitializationProvider"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+63            android:authorities="com.example.apprealidadeaumentada.androidx-startup"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+64            android:exported="false" >
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+65            <meta-data
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+66                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+67                android:value="androidx.startup" />
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\cbona\.gradle\caches\transforms-3\bff7c7dda3375c8ab014bba86f75fbb6\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+68            <meta-data
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cbona\.gradle\caches\transforms-3\cd838fc8f48812d53e3459f8badde778\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+69                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cbona\.gradle\caches\transforms-3\cd838fc8f48812d53e3459f8badde778\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+70                android:value="androidx.startup" />
+70-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\cbona\.gradle\caches\transforms-3\cd838fc8f48812d53e3459f8badde778\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+71        </provider>
+72    </application>
+73
+74</manifest>
