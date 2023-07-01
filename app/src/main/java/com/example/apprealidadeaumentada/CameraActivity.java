@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.TextureView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -58,13 +59,9 @@ public class CameraActivity extends AppCompatActivity {
             // Criar sessão AR
             try {
                 arSession = new Session(this);
-            } catch (UnavailableArcoreNotInstalledException e) {
-                throw new RuntimeException(e);
-            } catch (UnavailableApkTooOldException e) {
-                throw new RuntimeException(e);
-            } catch (UnavailableSdkTooOldException e) {
-                throw new RuntimeException(e);
-            } catch (UnavailableDeviceNotCompatibleException e) {
+            } catch (UnavailableArcoreNotInstalledException |
+                     UnavailableDeviceNotCompatibleException | UnavailableSdkTooOldException |
+                     UnavailableApkTooOldException e) {
                 throw new RuntimeException(e);
             }
 
@@ -113,7 +110,7 @@ public class CameraActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == CAMERA_PERMISSION_CODE) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
