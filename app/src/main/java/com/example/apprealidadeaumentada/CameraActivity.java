@@ -6,6 +6,7 @@ import android.graphics.SurfaceTexture;
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.TextureView;
 import android.widget.Toast;
 
@@ -21,6 +22,7 @@ import com.google.ar.core.exceptions.UnavailableArcoreNotInstalledException;
 import com.google.ar.core.exceptions.UnavailableDeviceNotCompatibleException;
 import com.google.ar.core.exceptions.UnavailableSdkTooOldException;
 
+import java.io.IOException;
 
 public class CameraActivity extends AppCompatActivity {
     private static final int CAMERA_PERMISSION_CODE = 1;
@@ -83,6 +85,13 @@ public class CameraActivity extends AppCompatActivity {
                     GLES20.glTexParameterf(GLES11Ext.GL_TEXTURE_EXTERNAL_OES, GLES20.GL_TEXTURE_WRAP_T, GLES20.GL_CLAMP_TO_EDGE);
 
                     arSession.setCameraTextureName(textureId);
+
+                    // Chamar a API do Sketchfab
+                    try {
+                        callSketchfabAPI();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
 
                 @Override
@@ -107,6 +116,15 @@ public class CameraActivity extends AppCompatActivity {
             Toast.makeText(this, "ARCore não suportado neste dispositivo.", Toast.LENGTH_SHORT).show();
             finish();
         }
+    }
+
+    private void callSketchfabAPI() throws IOException {
+        String sketchfabApiToken = "bbdeda44642d4bb2a5a27ab42c259b11"; //colocar a chave da api da conta do cliente
+        SketchfabAPI sketchfabAPI = new SketchfabAPI(sketchfabApiToken);
+        String response = sketchfabAPI.getModels();
+
+        // Exibir a resposta da API do Sketchfab
+        Log.d("SketchfabAPI", response);
     }
 
     @Override
